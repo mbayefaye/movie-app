@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/71674dd30a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+    />
+    <title>Movie App</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <section class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Movie Fight
+            <span class="icon">
+              <i class="fas fa-film"></i>
+            </span>
+          </h1>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div id="left-autocomplete"></div>
+          <div id="left-summary"></div>
+        </div>
+
+        <div class="column">
+          <div id="right-autocomplete"></div>
+          <div id="right-summary"></div>
+        </div>
+      </div>
+      <div class="column is-half notification is-primary tutorial">
+        <h1 class="title">Search For Movie on Both Side</h1>
+        <div class="subtitle">We will tell you which is best</div>
+      </div>
+      <!-- <div class="dropdown is-active">
+        <input />
+        <div class="dropdown-menu">
+          <div class="dropdown-content">
+            <a class="dropdown-item">Movie #1</a>
+            <a class="dropdown-item">Movie #2</a>
+            <a class="dropdown-item">Movie #3</a>
+          </div>
+        </div>
+      </div>
+      <div id="target"></div> -->
+    </div>
+    <script src="./utils.js"></script>
+    <script src="./autocomplete.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
